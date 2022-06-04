@@ -1,8 +1,8 @@
-const { Pizza } = require("../models/");
+const { Pizza } = require("../models");
 
 const pizzaController = {
   getAllPizza(req, res) {
-    Pizza.Find({})
+    Pizza.find({})
       .then((dbPizzaData) => res.json(dbPizzaData))
       .catch((err) => {
         console.log(err);
