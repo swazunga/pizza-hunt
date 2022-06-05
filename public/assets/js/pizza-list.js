@@ -44,5 +44,5 @@ const printPizza = ({
   `;
 
   $pizzaList.innerHTML += pizzaCard;
-  getPizzaList();
 };
+getPizzaList();
